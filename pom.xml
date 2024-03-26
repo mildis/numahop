@@ -502,33 +502,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.cosium.code</groupId>
-                <artifactId>git-code-format-maven-plugin</artifactId>
-                <version>${git-code-format-maven-plugin.version}</version>
-                <configuration>
-                    <formatterOptions>
-                        <googleJavaFormat.fixImportsOnly>true</googleJavaFormat.fixImportsOnly>
-                        <googleJavaFormat.skipSortingImports>false</googleJavaFormat.skipSortingImports>
-                        <googleJavaFormat.skipRemovingUnusedImports>false</googleJavaFormat.skipRemovingUnusedImports>
-                    </formatterOptions>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>com.cosium.code</groupId>
-                        <artifactId>google-java-format</artifactId>
-                        <version>${git-code-format-maven-plugin.version}</version>
-                    </dependency>
-                </dependencies>
-                <executions>
-                    <execution>
-                        <id>validate-code-format</id>
-                        <goals>
-                            <goal>validate-code-format</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <groupId>com.github.ekryd.sortpom</groupId>
                 <artifactId>sortpom-maven-plugin</artifactId>
                 <version>${sortpom-maven-plugin.version}</version>
