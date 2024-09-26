@@ -45,6 +45,7 @@
         <saxon.version>12.0</saxon.version>
         <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
         <sonar.cpd.exclusions>src/main/java/**/*DTO.java</sonar.cpd.exclusions>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.issue.ignore.multicriteria>S107,S3752,S3776,S4684</sonar.issue.ignore.multicriteria>
         <!-- # Methods should not have too many parameters -->
         <sonar.issue.ignore.multicriteria.S107.resourceKey>src/main/java/**/*</sonar.issue.ignore.multicriteria.S107.resourceKey>
@@ -58,9 +59,8 @@
         <!-- Rule https://sonarcloud.io/coding_rules?open=java%3AS4684&rule_key=java%3AS4684 -->
         <sonar.issue.ignore.multicriteria.S4684.resourceKey>src/main/java/**/*</sonar.issue.ignore.multicriteria.S4684.resourceKey>
         <sonar.issue.ignore.multicriteria.S4684.ruleKey>java:S4684</sonar.issue.ignore.multicriteria.S4684.ruleKey>
-        <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
         <sonar.organization>mildis-github</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
 
         <sortpom-maven-plugin.version>3.2.0</sortpom-maven-plugin.version>
         <tika.version>1.18</tika.version>
